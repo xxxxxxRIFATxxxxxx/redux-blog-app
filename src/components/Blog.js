@@ -38,7 +38,7 @@ const Blog = ({blog, filterHandler}) => {
                     </a>
                 </div>
                 <div className="mt-6 flex items-center">
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 cursor-pointer" onClick={() => filterHandler(author)}>
                         <img
                             className="h-10 w-10 rounded-full"
                             src={authorImage}
